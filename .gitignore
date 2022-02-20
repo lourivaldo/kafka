@@ -1,2 +1,3 @@
 .idea
 kafka-connect/.docker
+kafka-connect/data
