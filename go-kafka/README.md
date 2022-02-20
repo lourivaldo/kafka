@@ -10,4 +10,8 @@ kafka-topics --create --bootstrap-server=localhost:9092 --topic=teste --partitio
 kafka-console-consumer --bootstrap-server=localhost:9092 --topic=teste
 
 go get github.com/confluentinc/confluent-kafka-go/kafka
+
+go run cmd/consumer/main.go
+
+kafka-consumer-groups --bootstrap-server=localhost:9092 --group=goapp-group --describe
 ```
